@@ -1,0 +1,53 @@
+1686002360840	geckodriver	INFO	Listening on 127.0.0.1:53221
+1686002360899	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "50001" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileeThhNU"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1686002362022	Marionette	INFO	Marionette enabled
+1686002362029	Marionette	INFO	Listening on port 39533
+WebDriver BiDi listening on ws://localhost:50001
+Read port: 39533
+1686002362242	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileeThhNU/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:50001/devtools/browser/18a8bccd-b422-42bd-a03b-74fea2441365
+JavaScript error: https://bordercolliefajtamentes.hu/js/plugins.js, line 58: Error: Map container not found.
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1996\"  data: no]"
+1686002371066	Marionette	INFO	Stopped listening on port 39533
+1686002400252	geckodriver	INFO	Listening on 127.0.0.1:33535
+1686002636525	geckodriver	INFO	Listening on 127.0.0.1:45175
+1686002961464	geckodriver	INFO	Listening on 127.0.0.1:52861
+1686003607833	geckodriver	INFO	Listening on 127.0.0.1:37733
+1686004386193	geckodriver	INFO	Listening on 127.0.0.1:51033
+1686006339632	geckodriver	INFO	Listening on 127.0.0.1:46547
+1686006432610	geckodriver	INFO	Listening on 127.0.0.1:59273
+1686006921539	geckodriver	INFO	Listening on 127.0.0.1:50567
+1686090644252	geckodriver	INFO	Listening on 127.0.0.1:49797
+1686090644824	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "46723" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiletbGkfh"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1686090645939	Marionette	INFO	Marionette enabled
+1686090645946	Marionette	INFO	Listening on port 45543
+WebDriver BiDi listening on ws://localhost:46723
+Read port: 45543
+1686090646146	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletbGkfh/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:46723/devtools/browser/bb6c47d4-f8d5-4a1f-95f8-4c6b2766a61e
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1686091008648	geckodriver	INFO	Listening on 127.0.0.1:35969
+1686091411609	geckodriver	INFO	Listening on 127.0.0.1:46993
+1686092208762	geckodriver	INFO	Listening on 127.0.0.1:54765
+1686092386484	geckodriver	INFO	Listening on 127.0.0.1:37019
+1686092553006	geckodriver	INFO	Listening on 127.0.0.1:43207
