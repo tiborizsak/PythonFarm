@@ -62,6 +62,6 @@ with open('customIETF.log', 'w') as f:
 
         log_line = f'<{priority}>1 {timestamp.isoformat()} {host} {app_name} {procid} {msgid} {structured_data} {message}\n'
         log_line_len = len(log_line)
-        f.write(log_line_len + " " + log_line)
+        f.write(str(log_line_len) + " " + log_line)
 
         timestamp += timedelta(seconds=1)
