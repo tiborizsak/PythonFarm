@@ -2,9 +2,9 @@ import random
 from datetime import datetime, timedelta
 
 characters = [
-    "Homer", "Marge", "Bart", "Lisa", "Maggie", "Moe", "Lenny", "Carl", "Ned Flanders",
-    "Principal Skinner", "Barney", "Krusty", "Mr. Burns", "Smithers", "Milhouse", "Ralph Wiggum",
-    "Chief Wiggum", "Nelson", "Edna Krabappel", "Sideshow Bob", "Apu", "Kent Brockman", "Comic Book Guy", "Otto"
+    "Homer", "Marge", "Bart", "Lisa", "Maggie", "Moe", "Lenny", "Carl", "NedFlanders",
+    "PrincipalSkinner", "Barney", "Krusty", "MrBurns", "Smithers", "Milhouse", "RalphWiggum",
+    "ChiefWiggum", "Nelson", "EdnaKrabappel", "SideshowBob", "Apu", "KentBrockman", "ComicBookGuy", "Otto"
 ]
 
 quotes = {
