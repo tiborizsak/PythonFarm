@@ -8,3 +8,4 @@ def szken(ip, interface):
     print(answer.summary())
 
 szken("192.168.0.1", "wlan0")  # replace "eth0" with your interface name
+
