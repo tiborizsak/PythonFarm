@@ -69,3 +69,8 @@ newlineRegex = re.compile('.*', re.DOTALL) # this will match everything includin
 # [^abc] matches any character that isn’t between the brackets.
 
 robocop = re.compile(r'robocop', re.I) # ignore case
+
+# Substitute
+
+namesRegex = re.compile(r'Agent \w+')
+namesRegex.sub('CENSORED', 'Agent Alice gave the secret documents to Agent Bob.')
