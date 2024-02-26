@@ -43,3 +43,5 @@ matchexactnumberoftimes = re.compile(r'(Ha){3}')
 
 regex.findall('text')
 # this will return a list not an object of the matched occurrences. If groups involved in the pattern then those will be tuples in the list
+
+# Character classes eg. \d \D \w \W or custom classes within [] like [a|b|c|1-5]
