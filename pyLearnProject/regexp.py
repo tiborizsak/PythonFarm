@@ -29,7 +29,9 @@ batReg2 = re.compile(r'Bat(wo)?man')
 
 # ? meaning matches zero or one time
 # * meaning matches zero or more times
+# r'Batwowowowoman will match
 # + it has to appear at least one time
+# r'Batman' won't match
 # {x} the exact number of times
 
 haha = 'HahaHaHaHa'
