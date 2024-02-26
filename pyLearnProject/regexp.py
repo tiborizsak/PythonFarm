@@ -48,4 +48,6 @@ regex.findall('text')
 # ^ in the beginning of the char class and it makes it negative excludes it. It also means that the pattern has to match at the beginning of the string.
 # $ at the end means that it should match at the end of the string.
 # ^ $ together means that the exact string has to match.
-# . is a wildcard matches anything except new line one char only at a time but using it with .* it matches anything and everything. 
+# . is a wildcard matches anything except new line one char only at a time but using it with .* it matches anything and everything.
+
+newlineRegex = re.compile('.*', re.DOTALL) # this will match everything including newline
