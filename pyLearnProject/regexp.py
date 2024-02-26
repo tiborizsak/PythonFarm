@@ -45,3 +45,6 @@ regex.findall('text')
 # this will return a list not an object of the matched occurrences. If groups involved in the pattern then those will be tuples in the list
 
 # Character classes eg. \d \D \w \W or custom classes within [] like [a|b|c|1-5]
+# ^ in the beginning of the char class and it makes it negative excludes it. It also means that the pattern has to match at the beginning of the string.
+# $ at the end means that it should match at the end of the string.
+# ^ $ together means that the exact string has to match.
