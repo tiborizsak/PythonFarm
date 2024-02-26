@@ -67,3 +67,5 @@ newlineRegex = re.compile('.*', re.DOTALL) # this will match everything includin
 # \D, \W, and \S match anything except a digit, word, or space character, respectively.
 # [abc] matches any character between the brackets (such as a, b, or c).
 # [^abc] matches any character that isn’t between the brackets.
+
+robocop = re.compile(r'robocop', re.I) # ignore case
