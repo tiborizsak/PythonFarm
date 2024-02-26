@@ -41,3 +41,5 @@ matchexactnumberoftimes = re.compile(r'(Ha){3}')
 # this also could be a range {3,5}
 # greedy matches the longest non-greedy matches the shortest occurrnce
 
+regex.findall('text')
+# this will return a list not an object of the matched occurrences. If groups involved in the pattern then those will be tuples in the list
