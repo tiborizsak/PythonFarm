@@ -64,7 +64,6 @@ newlineRegex = re.compile('.*', re.DOTALL) # this will match everything includin
 # spam$ means the string must end with spam.
 # The . matches any character, except newline characters.
 # \d, \w, and \s match a digit, word, or space character, respectively.
-# \D, \W, and \S match anything except a digit, word, or space character, 
-respectively.
+# \D, \W, and \S match anything except a digit, word, or space character, respectively.
 # [abc] matches any character between the brackets (such as a, b, or c).
 # [^abc] matches any character that isn’t between the brackets.
