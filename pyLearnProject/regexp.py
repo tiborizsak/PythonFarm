@@ -87,3 +87,6 @@ phoneRegex = re.compile(r'''(
  \d{4}      # last 4 digits
 (\s*(ext|x|ext.)\s*\d{2,5})? # extension
  )''', re.VERBOSE)
+
+# If numRegex = re.compile(r'\d+'), what will numRegex.sub('X', '12 drummers, 
+11 pipers, five rings, 3 hens') return?
