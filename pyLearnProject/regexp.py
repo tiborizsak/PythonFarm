@@ -76,8 +76,7 @@ namesRegex = re.compile(r'Agent \w+')
 namesRegex.sub('CENSORED', 'Agent Alice gave the secret documents to Agent Bob.')
 
 agentNamesRegex = re.compile(r'Agent (\w)\w*')
-agentNamesRegex.sub(r'\1****', 'Agent Alice told Agent Carol that Agent 
-Eve knew Agent Bob was a double agent.')
+agentNamesRegex.sub(r'\1****', 'Agent Alice told Agent Carol that Agent Eve knew Agent Bob was a double agent.')
 
 phoneRegex = re.compile(r'''(
  (\d{3}|\(\d{3}\))? # area code
@@ -89,3 +88,5 @@ phoneRegex = re.compile(r'''(
  )''', re.VERBOSE)
 
 # If numRegex = re.compile(r'\d+'), what will numRegex.sub('X', '12 drummers, 11 pipers, five rings, 3 hens') return?
+
+# In char classes special chars don't need to be escaped.
