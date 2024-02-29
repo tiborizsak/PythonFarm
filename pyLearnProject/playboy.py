@@ -4,4 +4,5 @@ guessList = ['heads', 'tails']
 guess = ''
 
 while toss == guess:
-  input('Gimme guess! : ')
+  guess = guessList.index(input('Gimme guess! : '))
+  
