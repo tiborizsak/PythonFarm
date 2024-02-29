@@ -26,7 +26,6 @@ def guessthenumma(numberofrounds, finite):
   
     if toss == guess:
       print('Yaaay! Exiting...........')
-      brake
     else:
       if finite == True:
         guessthenumma()
