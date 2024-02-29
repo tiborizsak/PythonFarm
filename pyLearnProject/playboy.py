@@ -16,14 +16,21 @@ while toss == guess:
 def guessTheNumber(numberofrounds, finite)
   if numberofrounds > 0:
     for i in range(numberofrounds + 1):
-      toss = random.randint(0, 1)
-      guess = guessList.index(input('Gimme guess! : '))
-      if toss == guess:
-        print('yaaaaaay')
-      else:
-        print()
+     
 
-def guessthenumma():
+def guessthenumma(numberofrounds, finite):
   toss = random.randint(0, 1)
   guess = guessList.index(input('Gimme output! : '))
-  return toss == guess
+
+  while numberofrounds != 0:
+  
+    if toss == guess:
+      print('Yaaay! Exiting...........')
+      brake
+    else:
+      if finite == True:
+        guessthenumma()
+        numberofrounds--
+      else:
+        print('You suck in this game')
+        guesthenumma()
