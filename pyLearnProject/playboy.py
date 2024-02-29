@@ -2,6 +2,7 @@ import random
 
 guessList = ['heads', 'tails']
 guess = ''
+toss = ''
 
 while toss == guess:
   guess = guessList.index(input('Gimme guess! : '))
