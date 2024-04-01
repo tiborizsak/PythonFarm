@@ -51,3 +51,10 @@ when = 'Monday'
 where = 'in the forest'
 
 text = 'On %s we had a walk with %s in the %s' % (nev, when, where)
+
+# Also a so called f-string could be used for placing variables in the string
+
+firstname = 'Jozsi'
+lastname = 'Kolompar'
+
+fullname = f"{firstname} {lastname}"
