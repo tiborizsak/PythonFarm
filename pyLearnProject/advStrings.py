@@ -64,7 +64,7 @@ fullname = f"{firstname} {lastname}"
 newlinestring = "Programming languages:\n Python\n JavaScript\n"
 tabstring = "\tsometext"
 
-# rstrip, lstrip, strip, prefix removal
+# rstrip, lstrip, strip, prefix/suffix removal
 
 stringwithleftspace = ' string'
 stringwithrightspace = 'string '
@@ -77,4 +77,5 @@ stringwithspace.strip()
 stringwithprefix = 'https://example.com'
 
 stringwithprefix.removeprefix('https://')
+stirngwithprefix.removesuffix('.com')
 
