@@ -58,3 +58,8 @@ firstname = 'Jozsi'
 lastname = 'Kolompar'
 
 fullname = f"{firstname} {lastname}"
+
+# \n \t also could be used within the string
+
+newlinestring = "Programming languages:\n Python\n JavaScript\n"
+tabstring = "\tsometext"
