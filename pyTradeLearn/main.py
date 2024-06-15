@@ -18,3 +18,9 @@ if __name__ == '__main__':
 # Some custom shit added
 
 # Some more custom shit
+
+for i in range(0,10):
+    print("Lófasz")
+
+
+
